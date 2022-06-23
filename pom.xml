@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.lzq</groupId>
+    <artifactId>dytp</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <packaging>jar</packaging>
+    <name>dytp</name>
+    <description>DynamicThreadPool in Java</description>
+
+    <url>https://github.com/XiaShus/dynamic-threadPool.git</url>
+    <inceptionYear>2022</inceptionYear>
+
+    <scm>
+        <url>https://github.com/XiaShus/dynamic-threadPool.git</url>
+        <connection>scm:git:https://git@github.com/XiaShus/dynamic-threadPool.git</connection>
+    </scm>
+
+
+    <developers>
+        <developer>
+            <id>lzq</id>
+            <name>LiZhiQ</name>
+            <email>18196671484@163.com</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>Apache 2</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.codehaus.plexus</groupId>
+                        <artifactId>plexus-compiler-javac</artifactId>
+                        <version>2.7</version>
+                    </dependency>
+                </dependencies>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.1</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>4.3.7.RELEASE</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+
+</project>
+
